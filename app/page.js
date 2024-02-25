@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
 import Iconbutton from "./components/Iconbutton";
@@ -18,7 +19,7 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
         <div className="flex items-center">
-          <img src={ "/assets/profilePic.png" } alt="Img" className="w-20 h-20 rounded-full mr-4" />
+          <Image src={ "/assets/profilePic.png" } width={80} height={80} alt="Img" className="rounded-full mr-4" />
           <div>
             <h1 className="text-3xl font-semibold text-gray-900 dark:text-white">Oliver Strange</h1>
             <p className="text-gray-600 dark:text-gray-300">Full-stack software engineer based in Woking</p>
