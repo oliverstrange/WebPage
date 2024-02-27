@@ -25,7 +25,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src="/assets/me.png"
+              src="/me.png"
               alt="Oliver Strange"
               width="412"
               height="412"
@@ -78,6 +78,7 @@ const Intro = () => {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          href="https://github.com/oliverstrange/"
           target="_blank"
         >
           <FaGithubSquare />

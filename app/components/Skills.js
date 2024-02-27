@@ -34,6 +34,7 @@ const Skills = () => {
         "Unity",
         "UTF",
         "Java",
+        "Android Studio",
         "JUnit",
         "Python",
         "REST APIs",

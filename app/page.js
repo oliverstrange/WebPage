@@ -15,6 +15,7 @@ export default function Home() {
     <div className="h-36"></div>
     <About/>
     <Skills/>
+
   </div>
 
   );
