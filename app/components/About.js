@@ -29,10 +29,16 @@ const About = () => {
         My <span className="italic">favourite</span> part of my studies there, however, was always participating in
         group projects. 
       </p>
-
+      <p className="mb-3">
+        Since university, I've been working as a <span className="font-medium">software developer</span>{" "}
+        at Ceox Services, developing business applications for public sector clients. I mainly use{" "}
+        <span className="font-medium">JavaScript,</span> but I've also had the chance to learn new tools
+        like <span className="font-medium">Azure</span> and <span className="font-medium">NodeJS.</span>{" "}
+      </p>
       <p>
-        Since university, I've been working as a <span className="font-medium">full-stack developer</span>{" "}
-        at Ceox Services, developing business applications for public sector clients.
+        Outside of work, I enjoy playing the guitar. I also love working on side projects{" "}
+        <span className="italic">(like this one)</span> to learn new languages and frameworks. Take a look
+        at my <span className="font-medium">GitHub</span> to find them!
       </p>
     </motion.section>
   );

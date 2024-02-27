@@ -28,7 +28,7 @@ function NavHeader() {
         hash: ""
       },
       {
-          name: "Contact",
+          name: "Projects",
           hash: ""
       },
   ]
