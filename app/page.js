@@ -1,22 +1,24 @@
 import React from "react";
 import Image from 'next/image'
-import Navbar from "./components/Navbar";
+import NavHeader from "./components/NavHeader";
+import Intro from "./components/Intro";
+import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Iconbutton from "./components/Iconbutton";
 
 export default function Home() {
   return (
 
-  <div className="bg-slate-200 min-h-screen">
+  <div className="min-h-screen flex flex-col items-center">
 
-    <header>
-      <React.Fragment>
-        <Navbar/>
-      </React.Fragment>  
-    </header>
+    <NavHeader/>
+    <div className="h-28"></div>
+    <Intro/>
+    <div className="h-36"></div>
+    <About/>
+    
 
-    <main className="pt-24">
-
+    <main className="flex flex-col items-center pt-24">
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
         <div className="flex items-center">
           <Image src={ "/assets/profilePic.png" } width={80} height={80} alt="Img" className="rounded-full mr-4" />

@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} relative`}>
+        <div class="absolute -z-10 h-screen w-screen bg-gradient-to-l from-gray-200 via-blue-200 to-stone-100"></div>
+        <div className="absolute -z-10 h-screen w-screen bg-gradient-to-b from-transparent to-white"></div>
+        {children}
+      </body>
     </html>
   );
 }
