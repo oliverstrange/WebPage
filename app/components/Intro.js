@@ -6,12 +6,18 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import me from "../../public/me.png";
+
+import { useSectionInView } from "../nav-context/Hooks";
+import { useActiveSectionContext } from "../nav-context/Context";
+
 
 const Intro = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -26,11 +32,12 @@ const Intro = () => {
             }}
           >
             <Image
-              src={me}
+              unoptimized={true}
+              src="/me.png"
               alt="Oliver Strange"
-              width="412"
-              height="412"
-              quality="100"
+              width={412}
+              height={412}
+              quality={100}
               priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />

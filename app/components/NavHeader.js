@@ -5,31 +5,33 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from "clsx";
 
+import { useActiveSectionContext } from "../nav-context/Context";
+
 
 function NavHeader() {
 
-  const [ activeSection, setActiveSection ] = useState("Home");
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const links = [
       {
           name: "Home",
-          hash: ""
+          hash: "#home"
       },
       {
           name: "About",
-          hash: ""
+          hash: "#about"
       },
       {
           name: "Skills",
-          hash: ""
+          hash: "#skills"
       },
       {
         name: "Experience",
-        hash: ""
+        hash: "#experience"
       },
       {
           name: "Projects",
-          hash: ""
+          hash: "#projects"
       },
   ]
 
@@ -60,7 +62,8 @@ function NavHeader() {
                   )}
                   href={link.hash}
                   onClick={() => {
-                    setActiveSection(link.name)
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
                   }}
                 >
                   {link.name}

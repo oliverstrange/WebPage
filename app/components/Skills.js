@@ -4,9 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Heading from "./Heading";
 
+import { useSectionInView } from "../nav-context/Hooks";
+
 
 
 const Skills = () => {
+
+    const {ref} = useSectionInView("Skills", 1)
 
     const fadeInAnimationVariants = {
         initial: {
@@ -48,7 +52,8 @@ const Skills = () => {
 
     return (
         <section
-        id="home"
+        ref={ref}
+        id="skills"
         className="mb-28 max-w-[53rem] scroll-mt-28 sm:mb-40"
         >
         <Heading>Skills</Heading>
