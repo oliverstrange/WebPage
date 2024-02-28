@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import SkillButton from "./SkillButton";
 import Heading from "./Heading";
 
 
@@ -29,6 +28,7 @@ const Skills = () => {
         "CSS",
         "React",
         "Next.js",
+        "Node.js",
         "Tailwind",
         "C#",
         "Unity",
@@ -52,7 +52,7 @@ const Skills = () => {
         className="mb-28 max-w-[53rem] scroll-mt-28 sm:mb-40"
         >
         <Heading>Skills</Heading>
-        <ul className="flex flex-wrap justify-center gap-3">
+        <ul className="flex flex-wrap justify-center gap-3 px-2">
             {skillContent.map((content, index) => (
                 <motion.li
                 key={index}
@@ -64,7 +64,9 @@ const Skills = () => {
                 }}
                 custom={index}
                 >
-                    <SkillButton>{content}</SkillButton>
+                    <div className="font-medium rounded-full p-3 bg-slate-300">
+                        {content}
+                    </div>
                 </motion.li>
             ))}
         </ul>

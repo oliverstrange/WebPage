@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import me from "../../public/me.png";
 
 const Intro = () => {
 
@@ -25,7 +26,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src="/me.png"
+              src={me}
               alt="Oliver Strange"
               width="412"
               height="412"
