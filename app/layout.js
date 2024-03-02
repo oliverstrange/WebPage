@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <ActiveSectionContextProvider>
         <body className={`${inter.className} relative`}>
           <div className="absolute -z-10 h-screen w-full bg-gradient-to-l from-gray-200 via-blue-200 to-stone-100"></div>

@@ -30,8 +30,8 @@ function NavHeader() {
         hash: "#experience"
       },
       {
-          name: "Projects",
-          hash: "#projects"
+        name: "Projects",
+        hash: "#projects"
       },
   ]
 

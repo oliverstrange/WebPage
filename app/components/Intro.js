@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 import { useSectionInView } from "../nav-context/Hooks";
 import { useActiveSectionContext } from "../nav-context/Context";
 
 
 const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { ref } = useSectionInView("Home", 1);
 
   return (
     <section
@@ -91,6 +91,15 @@ const Intro = () => {
         >
           <FaGithubSquare />
         </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          href="mailto:oliver.m.w.strange@gmail.com"
+          target="_blank"
+        >
+          <MdEmail />
+        </a>
+
       </motion.div>
     </section>
   );

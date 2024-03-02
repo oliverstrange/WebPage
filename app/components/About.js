@@ -8,7 +8,7 @@ import { useSectionInView } from "../nav-context/Hooks";
 
 const About = () => {
 
-  const { ref } = useSectionInView("About", 1);
+  const { ref } = useSectionInView("About", 0.75);
 
   return (
     <motion.section
